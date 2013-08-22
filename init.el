@@ -2,4 +2,4 @@
 (install-packs '(flx-ido))
 
 (require 'flx-ido)
-(flx-ido-mode 1)')
+(flx-ido-mode 1)
