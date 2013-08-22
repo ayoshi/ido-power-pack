@@ -36,3 +36,13 @@
 
 ;; Use ignored extension list
 (setq ido-ignore-extensions t)
+
+
+;;Uniquify-buffers ----------------------------
+(when (require 'uniquify nil 'noerror)  ;; make buffer names more unique
+  (setq
+   uniquify-buffer-name-style 'post-forward
+   uniquify-separator ":"
+   uniquify-after-kill-buffer-p t       ;; rename after killing uniquified
+   uniquify-ignore-buffers-re "^\\*"))  ;; don't muck with special buffers
+;;---------------------------------------------
