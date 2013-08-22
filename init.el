@@ -9,7 +9,7 @@
 (add-to-list 'ido-ignore-files "\\.DS_Store")
 
 (global-set-key [C-tab] 'iflipb-next-buffer)
-(global-set-key [C-S-tab] 'iflipb-previous-buffer-buffer)
+(global-set-key [C-S-tab] 'iflipb-previous-buffer)
 
 ;; sort ido filelist by mtime instead of alphabetically
 (add-hook 'ido-make-file-list-hook 'ido-sort-mtime)
