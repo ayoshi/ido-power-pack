@@ -46,3 +46,8 @@
    uniquify-after-kill-buffer-p t       ;; rename after killing uniquified
    uniquify-ignore-buffers-re "^\\*"))  ;; don't muck with special buffers
 ;;---------------------------------------------
+
+;; Clean up recent file list
+(add-to-list 'recentf-exclude "~$")
+(add-to-list 'recentf-exclude "emacs.d")
+(add-to-list 'recentf-exclude ".ido*")
