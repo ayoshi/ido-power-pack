@@ -51,3 +51,4 @@
 (add-to-list 'recentf-exclude "~$")
 (add-to-list 'recentf-exclude "emacs.d")
 (add-to-list 'recentf-exclude ".ido*")
+(recentf-cleanup)
